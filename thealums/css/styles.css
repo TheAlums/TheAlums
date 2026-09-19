@@ -51,8 +51,8 @@ button { font-family: inherit; cursor: pointer; }
 .brand {
   display: flex; align-items: center; gap: 10px;
   font-family: "Cinzel", "Times New Roman", serif;
-  letter-spacing: 0.14em;
-  font-size: 18px;
+  letter-spacing: 0.12em;
+  font-size: 17px;
   font-weight: 700;
   color: var(--white);
 }
@@ -127,12 +127,12 @@ button { font-family: inherit; cursor: pointer; }
 h1, .display {
   font-family: "Cinzel", "Times New Roman", serif;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   color: var(--white);
 }
 h2, h3 {
-  font-family: "Graduate", "Cinzel", serif;
-  font-weight: 400;
+  font-family: "Cinzel", "Times New Roman", serif;
+  font-weight: 700;
   letter-spacing: 0.04em;
   color: var(--white);
   text-transform: uppercase;
@@ -251,7 +251,7 @@ h2, h3 {
   flex-shrink: 0;
 }
 .avatar.lg { width: 84px; height: 84px; font-size: 32px; border-radius: 16px; }
-.pc-name { font-family: "Graduate", "Cinzel", serif; font-size: 20px; color: var(--white); text-transform: uppercase; line-height: 1.1; }
+.pc-name { font-family: "Cinzel", "Times New Roman", serif; font-size: 20px; color: var(--white); text-transform: uppercase; line-height: 1.1; }
 .pc-meta { font-size: 12px; color: var(--muted); letter-spacing: 0.04em; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip {
@@ -495,7 +495,7 @@ footer a:hover { color: var(--gold); }
   padding: 22px;
 }
 .desk-link h3 {
-  font-family: "Graduate", "Cinzel", serif;
+  font-family: "Cinzel", "Times New Roman", serif;
   text-transform: uppercase;
   margin: 10px 0 6px;
 }
@@ -524,7 +524,7 @@ footer a:hover { color: var(--gold); }
   min-height: 140px;
 }
 .school-tile.live { border-color: var(--gold); }
-.school-tile h3 { font-family: "Graduate", "Cinzel", serif; text-transform: uppercase; font-size: 22px; margin: 8px 0; }
+.school-tile h3 { font-family: "Cinzel", "Times New Roman", serif; text-transform: uppercase; font-size: 22px; margin: 8px 0; }
 .school-tile p { color: var(--muted); font-size: 14px; }
 .soon { color: var(--muted); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
 @media (max-width: 720px) {
@@ -532,25 +532,41 @@ footer a:hover { color: var(--gold); }
   .nav-meta { display: none; }
 }
 
-.brand .seal {
-  width: 40px; height: 40px;
+.brand .seal,
+.brand svg.seal,
+svg.seal {
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   object-fit: cover;
-  background: #0b0d0c;
+  object-position: center;
+  background: #111;
+  flex-shrink: 0;
+  display: block;
+  overflow: hidden;
 }
 .channel {
   background: transparent !important;
   padding: 0 !important;
+  line-height: 0;
 }
-.channel img {
-  height: 44px; width: 44px;
+.channel img,
+.channel svg,
+svg.channel-seal {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center;
   display: block;
 }
-.tile-seal {
-  width: 72px; height: 72px;
+.tile-seal,
+svg.tile-seal {
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center;
   margin-bottom: 10px;
+  display: block;
 }

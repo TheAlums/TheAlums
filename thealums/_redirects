@@ -1,7 +1,4 @@
 # Cloudflare Pages redirects for The Alums
-https://www.thealums.com/*  https://thealums.com/:splat  301
-http://www.thealums.com/*   https://thealums.com/:splat  301
-http://thealums.com/*       https://thealums.com/:splat  301
 
 /producks/fantasy           /producks/stats.html  301
 /producks/fantasy.html      /producks/stats.html  301

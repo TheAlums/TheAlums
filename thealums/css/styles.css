@@ -2,8 +2,10 @@
   --green: #154733;
   --green-2: #0d2f22;
   --green-3: #1d6a4a;
-  --gold: #fee123;
-  --gold-2: #f5c400;
+  --gold: #FEE123;
+  --gold-2: #FEE123;
+  --black: #111111;
+  --cream: #F7F3E8;
   --ink: #111111;
   --ink-2: #141816;
   --panel: #161c19;
@@ -49,11 +51,15 @@ button { font-family: inherit; cursor: pointer; }
   gap: 24px;
 }
 .brand {
-  display: flex; align-items: center; gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 100%;
   font-family: "Libre Caslon Display", "Libre Caslon Text", "Times New Roman", serif;
-  letter-spacing: 0.12em;
-  font-size: 17px;
+  letter-spacing: 0.08em;
+  font-size: 18px;
   font-weight: 700;
+  line-height: 1;
   color: var(--white);
 }
 .brand-mark {
@@ -549,14 +555,17 @@ svg.seal {
   background: transparent !important;
   padding: 0 !important;
   line-height: 0;
+  display: flex;
+  align-items: center;
+  height: 44px;
 }
 .channel img,
 .channel svg,
 svg.channel-seal {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   display: block;
 }
@@ -573,19 +582,31 @@ svg.tile-seal {
 
 
 .seal-wrap {
-  width: 38px; height: 38px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   overflow: hidden;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
-  background: #111;
+  background: transparent;
+  line-height: 0;
 }
-.seal-wrap.lg { width: 72px; height: 72px; margin-bottom: 10px; }
+.seal-wrap.lg {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 10px;
+}
 .seal-wrap img {
-  width: 100%; height: 100%;
+  width: 44px;
+  height: 44px;
   object-fit: contain;
-  object-position: center;
   display: block;
+}
+.seal-wrap.lg img {
+  width: 72px;
+  height: 72px;
 }
 
 body.network {
@@ -622,4 +643,46 @@ body.network table { color: #111; background: #fffdf6; }
 body.network th { color: #111; border-color: #d9c98a; }
 body.network td { border-color: #e6dcb4; }
 body.network footer { color: #4a4538; border-top: 1px solid #d9c98a; }
-body.network .ad { background: #111; color: #F7F3E8; }
+body.network .ad { background: #111111; color: #F7F3E8; border-color: #FEE123; }
+body.network .ad small { color: #FEE123; }
+body.network .chip { background: #111111; color: #F7F3E8; border-color: #FEE123; }
+body.network .chip.gold { background: #FEE123; color: #111111; border-color: #FEE123; }
+body.network .soon { color: #111111; }
+body.network a { color: #111111; }
+body.network td a:hover { color: #111111; }
+body.network tr:hover td { background: #F7F3E8; }
+
+/* ProDucks channel: green + gold + cream + black only */
+body.channel {
+  background: #111111;
+  color: #F7F3E8;
+}
+body.channel .nav {
+  background: #111111;
+  border-bottom: 1px solid #FEE123;
+}
+body.channel .hero {
+  background: #154733;
+}
+body.channel .kicker { color: #FEE123; }
+body.channel h1, body.channel h2, body.channel h3 { color: #F7F3E8; }
+body.channel .lede,
+body.channel .section-head p,
+body.channel .prose p,
+body.channel .story p { color: #F7F3E8; }
+body.channel .panel,
+body.channel .player-card,
+body.channel .school-tile,
+body.channel table {
+  background: #154733;
+  border-color: #FEE123;
+  color: #F7F3E8;
+}
+body.channel th, body.channel td { border-color: #FEE123; color: #F7F3E8; }
+body.channel .chip { background: #111111; color: #F7F3E8; border-color: #FEE123; }
+body.channel .chip.gold,
+body.channel .filter.active,
+body.channel .buy { background: #FEE123; color: #111111; border-color: #FEE123; }
+body.channel .avatar { background: #FEE123; color: #154733; }
+body.channel footer { color: #F7F3E8; border-top: 1px solid #FEE123; }
+body.channel .ad { background: #111111; color: #F7F3E8; border-color: #FEE123; }

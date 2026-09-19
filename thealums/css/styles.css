@@ -50,7 +50,7 @@ button { font-family: inherit; cursor: pointer; }
 }
 .brand {
   display: flex; align-items: center; gap: 10px;
-  font-family: "Cinzel", "Times New Roman", serif;
+  font-family: "Libre Caslon Display", "Libre Caslon Text", "Times New Roman", serif;
   letter-spacing: 0.12em;
   font-size: 17px;
   font-weight: 700;
@@ -125,13 +125,13 @@ button { font-family: inherit; cursor: pointer; }
   content: ""; width: 22px; height: 2px; background: var(--gold);
 }
 h1, .display {
-  font-family: "Cinzel", "Times New Roman", serif;
+  font-family: "Libre Caslon Display", "Libre Caslon Text", "Times New Roman", serif;
   font-weight: 700;
   letter-spacing: 0.06em;
   color: var(--white);
 }
 h2, h3 {
-  font-family: "Cinzel", "Times New Roman", serif;
+  font-family: "Libre Caslon Display", "Libre Caslon Text", "Times New Roman", serif;
   font-weight: 700;
   letter-spacing: 0.04em;
   color: var(--white);
@@ -155,7 +155,7 @@ h2, h3 {
 }
 .stat b {
   display: block;
-  font-family: "Cinzel", "Times New Roman", serif;
+  font-family: "Libre Caslon Display", "Libre Caslon Text", "Times New Roman", serif;
   font-size: 32px;
   color: var(--gold);
   line-height: 1;
@@ -243,7 +243,7 @@ h2, h3 {
 .avatar {
   width: 52px; height: 52px; border-radius: 12px;
   display: grid; place-items: center;
-  font-family: "Cinzel", "Times New Roman", serif;
+  font-family: "Libre Caslon Display", "Libre Caslon Text", "Times New Roman", serif;
   font-size: 20px;
   background: linear-gradient(160deg, var(--green-3), var(--green));
   color: var(--gold);
@@ -251,7 +251,7 @@ h2, h3 {
   flex-shrink: 0;
 }
 .avatar.lg { width: 84px; height: 84px; font-size: 32px; border-radius: 16px; }
-.pc-name { font-family: "Cinzel", "Times New Roman", serif; font-size: 20px; color: var(--white); text-transform: uppercase; line-height: 1.1; }
+.pc-name { font-family: "Libre Caslon Display", "Libre Caslon Text", "Times New Roman", serif; font-size: 20px; color: var(--white); text-transform: uppercase; line-height: 1.1; }
 .pc-meta { font-size: 12px; color: var(--muted); letter-spacing: 0.04em; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip {
@@ -275,7 +275,7 @@ h2, h3 {
 .pc-week b { color: var(--white); }
 .ppr {
   margin-left: auto;
-  font-family: "Cinzel", "Times New Roman", serif;
+  font-family: "Libre Caslon Display", "Libre Caslon Text", "Times New Roman", serif;
   font-size: 22px;
   color: var(--gold);
 }
@@ -356,7 +356,7 @@ td a:hover { color: var(--gold); }
 }
 .stat-box b {
   display: block;
-  font-family: "Cinzel", "Times New Roman", serif;
+  font-family: "Libre Caslon Display", "Libre Caslon Text", "Times New Roman", serif;
   font-size: 28px;
   color: var(--gold);
 }
@@ -396,7 +396,7 @@ footer a:hover { color: var(--gold); }
   border: 1px solid var(--line);
   border-radius: 12px;
 }
-.step b { color: var(--gold); font-family: "Cinzel", "Times New Roman", serif; font-size: 20px; }
+.step b { color: var(--gold); font-family: "Libre Caslon Display", "Libre Caslon Text", "Times New Roman", serif; font-size: 20px; }
 
 .empty { color: var(--muted); padding: 24px; text-align: center; }
 
@@ -418,7 +418,7 @@ footer a:hover { color: var(--gold); }
   padding: 16px;
 }
 .ad small { letter-spacing: 0.16em; text-transform: uppercase; font-size: 10px; color: #6d7a73; }
-.ad b { color: var(--gold); font-family: "Cinzel", "Times New Roman", serif; letter-spacing: 0.06em; }
+.ad b { color: var(--gold); font-family: "Libre Caslon Display", "Libre Caslon Text", "Times New Roman", serif; letter-spacing: 0.06em; }
 .ad.leader { min-height: 90px; }
 .ad.sidebar { min-height: 250px; }
 .ad.inline { min-height: 70px; margin: 16px 0; }
@@ -438,13 +438,13 @@ footer a:hover { color: var(--gold); }
   border-radius: 10px;
   display: grid;
   place-items: center;
-  font-family: "Cinzel", "Times New Roman", serif;
+  font-family: "Libre Caslon Display", "Libre Caslon Text", "Times New Roman", serif;
   font-size: 28px;
   color: var(--gold);
   background: linear-gradient(160deg, #1d6a4a, #0d2f22);
 }
 .product h3 { font-size: 18px; text-transform: uppercase; }
-.price { color: var(--gold); font-family: "Cinzel", "Times New Roman", serif; font-size: 22px; }
+.price { color: var(--gold); font-family: "Libre Caslon Display", "Libre Caslon Text", "Times New Roman", serif; font-size: 22px; }
 .buy {
   display: inline-block;
   background: var(--gold);
@@ -495,7 +495,7 @@ footer a:hover { color: var(--gold); }
   padding: 22px;
 }
 .desk-link h3 {
-  font-family: "Cinzel", "Times New Roman", serif;
+  font-family: "Libre Caslon Display", "Libre Caslon Text", "Times New Roman", serif;
   text-transform: uppercase;
   margin: 10px 0 6px;
 }
@@ -504,7 +504,7 @@ footer a:hover { color: var(--gold); }
   .desk-links { grid-template-columns: 1fr; }
 }
 .channel {
-  font-family: "Cinzel", "Times New Roman", serif;
+  font-family: "Libre Caslon Display", "Libre Caslon Text", "Times New Roman", serif;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   font-size: 13px;
@@ -524,7 +524,7 @@ footer a:hover { color: var(--gold); }
   min-height: 140px;
 }
 .school-tile.live { border-color: var(--gold); }
-.school-tile h3 { font-family: "Cinzel", "Times New Roman", serif; text-transform: uppercase; font-size: 22px; margin: 8px 0; }
+.school-tile h3 { font-family: "Libre Caslon Display", "Libre Caslon Text", "Times New Roman", serif; text-transform: uppercase; font-size: 22px; margin: 8px 0; }
 .school-tile p { color: var(--muted); font-size: 14px; }
 .soon { color: var(--muted); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
 @media (max-width: 720px) {
@@ -570,3 +570,58 @@ svg.tile-seal {
   margin-bottom: 10px;
   display: block;
 }
+
+
+.seal-wrap {
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+  flex-shrink: 0;
+  background: #111;
+}
+.seal-wrap.lg { width: 72px; height: 72px; margin-bottom: 10px; }
+.seal-wrap img {
+  width: 128%; height: 128%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+  margin: -14%;
+  display: block;
+}
+
+body.network {
+  background: #F7F3E8;
+  color: #111111;
+}
+body.network .nav {
+  background: #111111;
+  border-bottom: 1px solid #FEE123;
+}
+body.network .brand,
+body.network .nav-links a.active,
+body.network .nav-links a:hover { color: #F7F3E8; }
+body.network .nav-links a { color: #c4b896; }
+body.network .nav-meta { color: #FEE123; }
+body.network .hero {
+  background: #111111;
+  color: #F7F3E8;
+}
+body.network .hero h1 { color: #F7F3E8; }
+body.network .hero .lede { color: #F7F3E8; }
+body.network .kicker { color: #FEE123; }
+body.network h1, body.network h2, body.network h3 { color: #111111; }
+body.network .hero h1 { color: #F7F3E8; }
+body.network .section-head p,
+body.network .school-tile p { color: #4a4538; }
+body.network .school-tile {
+  background: #fffdf6;
+  border: 1px solid #d9c98a;
+  color: #111;
+}
+body.network .school-tile.live { border-color: #FEE123; }
+body.network table { color: #111; background: #fffdf6; }
+body.network th { color: #111; border-color: #d9c98a; }
+body.network td { border-color: #e6dcb4; }
+body.network footer { color: #4a4538; border-top: 1px solid #d9c98a; }
+body.network .ad { background: #111; color: #F7F3E8; }

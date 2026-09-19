@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stats · ProDucks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Graduate&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="../index.html"><img class="seal" src="../img/alums-seal-black.png" alt="The Alums" /> THE&nbsp;ALUMS</a>
+      <a class="channel" href="index.html"><img src="../img/producks-seal.png" alt="ProDucks" /></a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="roster.html">Players</a>
+        <a href="stats.html" class="active">Stats</a>
+        <a href="news.html">News</a>
+        <a href="draft.html">Draft</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">The Idea</a>
+      </nav>
+      <div class="nav-meta">Sunday board · Week 1</div>
+    </div>
+  </header>
+  <div class="ticker"><div class="ticker-track" id="ticker-track"></div></div>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2>Sunday board</h2>
+          <p>Box score, PPR, projection, grade. NFL only unless you hit CFL.</p>
+        </div>
+      </div>
+      <div class="filters" id="stats-filters"></div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Player</th>
+              <th>Pos</th>
+              <th>Lg</th>
+              <th>Team</th>
+              <th>Result</th>
+              <th>Line</th>
+              <th>PPR</th>
+              <th>Proj</th>
+              <th>Grade</th>
+            </tr>
+          </thead>
+          <tbody id="stats-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="wrap"><p>© 2026 The Alums · Not affiliated with the University of Oregon, the NFL, the CFL, or Alum hotels.</p></div>
+  </footer>
+  <script src="../js/data.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

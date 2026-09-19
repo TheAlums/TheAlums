@@ -1,0 +1,18 @@
+# Cloudflare Pages redirects for The Alums
+https://www.thealums.com/*  https://thealums.com/:splat  301
+http://www.thealums.com/*   https://thealums.com/:splat  301
+http://thealums.com/*       https://thealums.com/:splat  301
+
+/producks/fantasy           /producks/stats.html  301
+/producks/fantasy.html      /producks/stats.html  301
+
+/producks/stats             /producks/stats.html  200
+/producks/news              /producks/news.html   200
+/producks/shop              /producks/shop.html   200
+/producks/draft             /producks/draft.html  200
+/producks/players           /producks/roster.html 200
+/producks/roster            /producks/roster.html 200
+/producks/about             /producks/about.html  200
+
+# Pretty player files — keep after the static page rules
+/producks/:id               /producks/player.html?id=:id  200

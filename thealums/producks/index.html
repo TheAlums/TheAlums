@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ProDucks · The Alums</title>
+  <meta name="description" content="Oregon Ducks in the NFL and CFL — Sunday board, news, draft, shop." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Graduate&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="../index.html"><img class="seal" src="../img/alums-seal-black.png" alt="The Alums" /> THE&nbsp;ALUMS</a>
+      <a class="channel" href="index.html"><img src="../img/producks-seal.png" alt="ProDucks" /></a>
+            <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="roster.html">Players</a>
+        <a href="stats.html">Stats</a>
+        <a href="news.html">News</a>
+        <a href="draft.html">Draft</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">The Idea</a>
+      </nav>
+      <div class="nav-meta">2026 · Week <b>1</b></div>
+    </div>
+  </header>
+
+  <div class="ticker"><div class="ticker-track" id="ticker-track"></div></div>
+
+  <section class="hero compact">
+    <div class="wrap">
+      <div class="kicker">Oregon channel</div>
+      <h1>ProDucks</h1>
+      <p class="lede">Sunday numbers, the week’s stories, the draft board, and the gear — one desk for Ducks after they leave Eugene.</p>
+      <div class="hero-stats">
+        <div class="stat"><b>36</b><span>On 53-man rosters</span></div>
+        <div class="stat"><b>24</b><span>NFL teams</span></div>
+        <div class="stat"><b>7</b><span>Straight 1st-round years</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <aside class="ad leader">
+      <small>Advertisement</small>
+      <b>Leaderboard · 728×90</b>
+    </aside>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2>Top performers</h2>
+          <p>Week 1 PPR among Oregon alumni.</p>
+        </div>
+        <a class="more" href="stats.html">Full stats →</a>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Player</th>
+              <th>Pos</th>
+              <th>Team</th>
+              <th>Wk 1 PPR</th>
+              <th>Line</th>
+            </tr>
+          </thead>
+          <tbody id="home-performers"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2>Top news</h2>
+          <p>What the desk is writing this week.</p>
+        </div>
+        <a class="more" href="news.html">All news →</a>
+      </div>
+      <div class="grid-2">
+        <article class="card story" id="featured-story"></article>
+        <div class="card news-list" id="news-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2>Shop</h2>
+          <p>Current-team jerseys. Affiliate links.</p>
+        </div>
+        <a class="more" href="shop.html">Full shop →</a>
+      </div>
+      <div class="shop-grid" id="home-shop"></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap desk-links">
+      <a class="desk-link" href="roster.html">
+        <span class="chip gold">Players</span>
+        <h3>Full roster</h3>
+        <p>Every Duck on a 53, with a file behind each name.</p>
+      </a>
+      <a class="desk-link" href="draft.html">
+        <span class="chip gold">Draft</span>
+        <h3>Pipeline board</h3>
+        <p>2027 watch list, measurables, last year’s class.</p>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p>© 2026 The Alums · Not affiliated with the University of Oregon, the NFL, the CFL, or Alum hotels.</p>
+    </div>
+  </footer>
+  <script src="../js/data.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Idea · The Alums</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Graduate&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="../index.html"><img class="seal" src="../img/alums-seal-black.png" alt="The Alums" /> THE&nbsp;ALUMS</a>
+      <a class="channel" href="index.html"><img src="../img/producks-seal.png" alt="ProDucks" /></a>
+            <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="roster.html">Players</a>
+        <a href="stats.html">Stats</a>
+        <a href="news.html">News</a>
+        <a href="draft.html">Draft</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html" class="active">The Idea</a>
+      </nav>
+      <div class="nav-meta">Product</div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap prose">
+      <div class="kicker">Product brief</div>
+      <h1 style="font-size:56px;text-transform:uppercase;line-height:.95">A desk for a college tree.</h1>
+      <p style="font-size:18px;margin-top:16px">
+        Bleacher Report organizes the sports internet around leagues and teams.
+        The Alums organizes it around <em>where they went to school</em>. Oregon is
+        the beachhead because the pipeline is deep, the brand is loud, and
+        36 former Ducks are on NFL 53-man rosters right now.
+      </p>
+
+      <h2>What v1 has to do</h2>
+      <ul>
+        <li><b>Roster truth.</b> Every Duck on a 53, plus IR / practice squad flags.</li>
+        <li><b>Sunday board.</b> One page with every Duck’s box score by 11pm PT.</li>
+        <li><b>News filter.</b> Ingest national and local stories, keep only those that mention a rostered Duck.</li>
+        <li><b>Fantasy layer.</b> PPR actuals + weekly projection + a start/sit chip.</li>
+        <li><b>Player files.</b> College years, draft slot, current team, season line.</li>
+      </ul>
+
+      <h2>Day-one data (free only)</h2>
+      <p>Do not buy a live feed until the site has traffic and a card processor. Launch on public data:</p>
+      <ul>
+        <li><b>Rosters, weekly box, draft history:</b> nflverse / <code>nfl_data_py</code> / nfldata.org — free, college field included. Filter <code>college == "Oregon"</code>.</li>
+        <li><b>Combine / workouts:</b> nflverse <code>load_combine()</code> plus public combine+pro-day sheets. Official numbers land once a year.</li>
+        <li><b>News:</b> RSS (Ducks Wire, GoDucks ProDucks, team sites) and a free GNews/NewsAPI tier. Deduplicate by URL.</li>
+        <li><b>Fantasy:</b> compute PPR from the same weekly file. Sleeper API is free for ADP.</li>
+        <li><b>CFL:</b> hand-maintained roster of Canada Ducks until income covers api.cfl.ca volume.</li>
+      </ul>
+      <p>Paid live box scores (SportsDataIO / Sportradar) wait until banners + affiliates cover the invoice. Until then, Sunday board updates after games, not every snap.</p>
+
+      <h2>Money before subscriptions</h2>
+      <ul>
+        <li><b>Banners:</b> one leaderboard under the hero, one inline in news, one on the fantasy board. Label them Advertisement. House ads for the shop until AdSense / direct-sold inventory fills them.</li>
+        <li><b>Affiliate shop:</b> Fanatics / NFL Shop / Amazon Associates / official Oregon store. Jersey and hat links tagged to the player’s current team. FTC disclosure on every product page.</li>
+        <li><b>Do not:</b> wallpaper the ticker or live box with ads. That is where trust lives.</li>
+      </ul>
+
+      <h2>Stack we’d ship</h2>
+      <ul>
+        <li>Next.js (or Astro) frontend, deployed on Vercel.</li>
+        <li>Postgres (players, weekly stats, stories) + a Sunday cron that pulls nflverse.</li>
+        <li>A tiny CMS (Sanity or even Notion) for the desk to write the Week N recap.</li>
+        <li>This static prototype is the design system. Keep the black / Oregon green / gold.</li>
+      </ul>
+
+      <h2>Roadmap</h2>
+      <div class="roadmap">
+        <div class="step"><b>V1</b><div>Oregon-only. Static design + curated Week 1 data. This folder.</div></div>
+        <div class="step"><b>V1.1</b><div>Live weekly stats job, headshots, practice-squad/IR, email “Sunday Flock” digest.</div></div>
+        <div class="step"><b>V2</b><div>Add Alabama, Georgia, Ohio State as sibling pipelines. Shared player engine, school skins.</div></div>
+        <div class="step"><b>V3</b><div>User accounts: follow a school, follow 8 players, fantasy overlay against your Sleeper league.</div></div>
+      </div>
+
+      <h2>Name and brand</h2>
+      <p>
+        Network name is <b>The Alums</b>. Oregon lives at <code>/producks</code> as a channel, not the company. Do not print ProDucks on merch. Footer: not affiliated with UO, the NFL, the CFL, or Alum hotels. Next schools are sibling paths.
+      </p>
+      <p>
+        Colors: Oregon Green <code>#154733</code> and Yellow <code>#FEE123</code> on near-black. Editorial type is Oswald. Body is Source Sans 3.
+      </p>
+
+      <h2>Legal</h2>
+      <p>
+        Player names and stats are facts. Do not use official NFL or University of Oregon marks without a license. Do not republish full articles. Headshots: use a licensed data provider or a simple monogram system like this prototype.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap"><p>© 2026 The Alums · Not affiliated with the University of Oregon, the NFL, the CFL, or Alum hotels.</p></div>
+  </footer>
+</body>
+</html>
